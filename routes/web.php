@@ -20,10 +20,10 @@ $router->get('/', function () use ($router) {
 Route::post('/tweet/comment', ['uses' => "TwitterCommentsController@tweetComments"]);
 
 //edit comment
-Route::patch('reports/comment/edit/{comment_id}', 'CommentsController@update');
+Route::patch('reports/comment/edit/{id}', 'CommentsController@update');
 
 // delete comment
-Route::delete('report/comment/{id}', 'CommentsController@delete');
+Route::delete('report/comment/{comment_id}', 'CommentsController@delete');
 
 // upvote/downvotes
 Route::patch('/reports/comment/vote/{comment_id}', ['uses' => 'CommentsController@vote']);
