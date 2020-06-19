@@ -18,7 +18,7 @@ What is the preferred way of using the API? This API can be accessed with any pr
 
 
 ## Base Url
-[https://fgn-comments-microservice.herokuapp.com](https://fgn-comments-microservice.herokuapp.com)
+[https://fgn-comments-service.herokuapp.com/](https://fgn-comments-service.herokuapp.com/)
 
 
 ## POST : `tweet/comment`
@@ -269,7 +269,7 @@ This routes edits comment
 
 > BODY 
 ```
-
+"email": "string",
 "comment_body": "string"
 ```
 
